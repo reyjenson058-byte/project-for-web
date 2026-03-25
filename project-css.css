@@ -1,0 +1,93 @@
+header {
+  background-color: rgb(219, 219, 245);
+  border: 1px solid;
+  
+}
+/* Element selector */
+body {
+  font-family: Arial;
+  margin: 0px;
+  background-color: #f4f4f4;
+  border: 1px solid;
+  
+}
+
+/* ID selector */
+#main-title {
+  color: darkblue;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  list-style: none;
+  background-color: rgb(23, 22, 22);
+  border: 1px solid;
+  padding: 10px;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: rgb(221, 218, 218);
+  text-decoration: none;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+  color: lightcyan;
+}
+.section-list
+{
+  background-color: #F5F9FE;
+}
+/* Section styling */
+section {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: white;
+ 
+}
+
+section h2 {
+  border: 1px solid #c1c7d0;  
+    background-color: #CFDDEF;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+section h3{
+   border: 1px solid #c1c7d0;  
+    background-color: #D3F0E0;   
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.section-table{
+  background-color: #F4FCF8;
+  
+}
+.row {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+.row section
+{
+  flex: 1;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  
+}
