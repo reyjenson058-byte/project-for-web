@@ -3,7 +3,7 @@ header {
   border: 1px solid;
   
 }
-/* Element selector */
+
 body {
   font-family: Arial;
   margin: 0px;
@@ -12,12 +12,12 @@ body {
   
 }
 
-/* ID selector */
+
 #main-title {
   color: darkblue;
 }
 
-/* Navigation */
+
 nav ul {
   display: flex;
   list-style: none;
@@ -35,7 +35,7 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* Hover effect */
+
 nav ul li a:hover {
   color: lightcyan;
 }
@@ -43,7 +43,7 @@ nav ul li a:hover {
 {
   background-color: #F5F9FE;
 }
-/* Section styling */
+
 section {
   margin: 20px;
   padding: 15px;
@@ -83,7 +83,7 @@ section h3{
 {
   flex: 1;
 }
-/* Footer */
+
 footer {
   text-align: center;
   padding: 10px;
