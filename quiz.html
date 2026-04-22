@@ -3,23 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Technical Seo</title>
+
     <link rel="stylesheet" href="project-css.css">
+
+ 
+    <script defer src="project.js"></script>
 </head>
 <body>
 
-   
-        <header>
-            <h1>Quiz</h1>
-        </header>
+<div class="container">
 
-        <nav>
+    <header>
+        <h1>HTML & Web Quiz</h1>
+    </header>
+  <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-    <li><a href="page1.html">On Page Seo</a></li>
-    <li><a href="page2.html">Off Page Seo</a></li>
-    <li><a href="page3.html"> Technical Seo</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="on-page.html">On Page Seo</a></li>
+    <li><a href="off-page.html">Off Page Seo</a></li>
+    <li><a href="technical-seo.html"> Technical Seo</a></li>
     <li><a href="refrences.html">References</a></li>
     <li><a href="quiz.html">Quiz</a></li>
             </ul>
         </nav>
+
+    <button id="startBtn" onclick="startQuiz()">Start Quiz</button>
+
+    
+    <div id="quizContainer" style="display: none;">
+        
+        <h2>Time Remaining: <span id="timer">10:00</span></h2>
+
+        <form id="quizForm">
+
+       <div class="question-block">
+                <p>1.which of the following people created seo's ? (Select all that apply)</p>
+                <label><input type="checkbox" name="q1" value="a"> John Audette</label>
+                <label><input type="checkbox" name="q1" value="b"> Bob Heyman</label>
+                <label><input type="checkbox" name="q1" value="c"> Bruce Clay</label>
+            </div>
+
+            <div class="question-block">
+                <p>2. What the following is an example of On-page SEO ?</p>
+                <label><input type="radio" name="q2" value="a"> using backlinks</label>
+                <label><input type="radio" name="q2" value="b"> keywords</label>
+                <label><input type="radio" name="q2" value="c"> location based</label>
+                <label><input type="radio" name="q2" value="d"> increasing site speed</label>
+            </div>
+
+            <div class="question-block">
+                <p>3. what is the main goal of technical seo?</p>
+                <label><input type="radio" name="q3" value="a">to increase websites trust </label>
+                <label><input type="radio" name="q3" value="b">optimize a websites infrastructure</label>
+                <label><input type="radio" name="q3" value="c">to improve search ability and user experience</label>
+                <label><input type="radio" name="q3" value="d">optimizing web pages for geo based audience </label>
+            </div>
+
+            <div class="question-block">
+                <p>4. Fill in the blank: which decade was Seo introduced? ____.</p>
+                <input type="text" name="q4">
+            </div>
+
+            <div class="question-block">
+                <p>5.which of the following are Technical Seo's ? (Select all that apply)</p>
+                <label><input type="checkbox" name="q5" value="a"> speed of page loads</label>
+                <label><input type="checkbox" name="q5" value="b"> backlinks</label>
+                <label><input type="checkbox" name="q5" value="c"> mobile optimization</label>
+            </div>
+
+            <button type="button" onclick="gradeQuiz()">Submit</button>
+            <button type="button" onclick="resetQuiz()">Restart</button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
